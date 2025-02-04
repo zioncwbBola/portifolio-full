@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const SocialsSidebar: React.FC = () => {
   return (
-    <div className="socials-sidebar">
+    <div className="socials-sidebar ml-10 w-10">
       <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer">
         <img src="/icons/facebook.svg" alt="Facebook" className="social-icon" />
       </Link>

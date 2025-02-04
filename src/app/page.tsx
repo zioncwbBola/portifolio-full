@@ -1,12 +1,14 @@
-import Link from "next/link";
+import Hero from "@/components/Hero"
+import Services from "@/components/Services"
+import Contact from "@/components/Contact"
+
 export default function Home() {
   return (
-    <div className="columns-3">
-      <h1>Home</h1>
-      <p>Welcome to the Home Page!</p>
-      <Link href="/">
-        
-      </Link>
+    <div>
+      <Hero />
+      <Services />
+      <Contact />
     </div>
-  );
+  )
 }
+
