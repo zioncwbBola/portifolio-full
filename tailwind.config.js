@@ -1,170 +1,3 @@
-// // // /** @type {import('tailwindcss').Config} */
-// // // module.exports = {
-// // //   content: [
-// // //     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-// // //     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-// // //     "./components/**/*.{js,ts,jsx,tsx,mdx}",
-// // //     "./src/**/*.{js,ts,jsx,tsx,mdx}",
-// // //     "*.{js,ts,jsx,tsx,mdx}",
-// // //   ],
-// // //   theme: {
-// // //     extend: {
-// // //       colors: {
-// // //         border: "hsl(var(--border))",
-// // //         input: "hsl(var(--input))",
-// // //         ring: "hsl(var(--ring))",
-// // //         background: "hsl(var(--background))",
-// // //         foreground: "hsl(var(--foreground))",
-// // //         primary: {
-// // //           DEFAULT: "hsl(var(--primary))",
-// // //           foreground: "hsl(var(--primary-foreground))",
-// // //         },
-// // //         secondary: {
-// // //           DEFAULT: "hsl(var(--secondary))",
-// // //           foreground: "hsl(var(--secondary-foreground))",
-// // //         },
-// // //         destructive: {
-// // //           DEFAULT: "hsl(var(--destructive))",
-// // //           foreground: "hsl(var(--destructive-foreground))",
-// // //         },
-// // //         muted: {
-// // //           DEFAULT: "hsl(var(--muted))",
-// // //           foreground: "hsl(var(--muted-foreground))",
-// // //         },
-// // //         accent: {
-// // //           DEFAULT: "hsl(var(--accent))",
-// // //           foreground: "hsl(var(--accent-foreground))",
-// // //         },
-// // //         popover: {
-// // //           DEFAULT: "hsl(var(--popover))",
-// // //           foreground: "hsl(var(--popover-foreground))",
-// // //         },
-// // //         card: {
-// // //           DEFAULT: "hsl(var(--card))",
-// // //           foreground: "hsl(var(--card-foreground))",
-// // //         },
-// // //       },
-// // //       borderRadius: {
-// // //         lg: "var(--radius)",
-// // //         md: "calc(var(--radius) - 2px)",
-// // //         sm: "calc(var(--radius) - 4px)",
-// // //       },
-// // //     },
-// // //   },
-// // //   plugins: [require("daisyui")],
-// // //   daisyui: {
-// // //     themes: ["light", "dark"],
-// // //   },
-// // // }
-
-// // /** @type {import('tailwindcss').Config} */
-// // module.exports = {
-// //   content: [
-// //     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-// //     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-// //     "./components/**/*.{js,ts,jsx,tsx,mdx}",
-// //     "./src/**/*.{js,ts,jsx,tsx,mdx}",
-// //     "*.{js,ts,jsx,tsx,mdx}",
-// //   ],
-// //   theme: {
-// //     extend: {
-// //       colors: {
-// //         border: "hsl(var(--border))",
-// //         input: "hsl(var(--input))",
-// //         ring: "hsl(var(--ring))",
-// //         background: "hsl(var(--background))",
-// //         foreground: "hsl(var(--foreground))",
-// //         primary: {
-// //           DEFAULT: "hsl(var(--primary))",
-// //           foreground: "hsl(var(--primary-foreground))",
-// //         },
-// //         secondary: {
-// //           DEFAULT: "hsl(var(--secondary))",
-// //           foreground: "hsl(var(--secondary-foreground))",
-// //         },
-// //         destructive: {
-// //           DEFAULT: "hsl(var(--destructive))",
-// //           foreground: "hsl(var(--destructive-foreground))",
-// //         },
-// //         muted: {
-// //           DEFAULT: "hsl(var(--muted))",
-// //           foreground: "hsl(var(--muted-foreground))",
-// //         },
-// //         accent: {
-// //           DEFAULT: "hsl(var(--accent))",
-// //           foreground: "hsl(var(--accent-foreground))",
-// //         },
-// //         popover: {
-// //           DEFAULT: "hsl(var(--popover))",
-// //           foreground: "hsl(var(--popover-foreground))",
-// //         },
-// //         card: {
-// //           DEFAULT: "hsl(var(--card))",
-// //           foreground: "hsl(var(--card-foreground))",
-// //         },
-// //       },
-// //     },
-// //   },
-// //   plugins: [require("daisyui")],
-// //   daisyui: {
-// //     themes: ["light", "dark"],
-// //   },
-// // }
-
-// /** @type {import('tailwindcss').Config} */
-// module.exports = {
-//   content: [
-//     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-//     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-//     "./components/**/*.{js,ts,jsx,tsx,mdx}",
-//     "./src/**/*.{js,ts,jsx,tsx,mdx}",
-//     "*.{js,ts,jsx,tsx,mdx}",
-//   ],
-//   theme: {
-//     extend: {
-//       colors: {
-//         border: "hsl(var(--border))",
-//         input: "hsl(var(--input))",
-//         ring: "hsl(var(--ring))",
-//         background: "hsl(var(--background))",
-//         foreground: "hsl(var(--foreground))",
-//         primary: {
-//           DEFAULT: "hsl(var(--primary))",
-//           foreground: "hsl(var(--primary-foreground))",
-//         },
-//         secondary: {
-//           DEFAULT: "hsl(var(--secondary))",
-//           foreground: "hsl(var(--secondary-foreground))",
-//         },
-//         destructive: {
-//           DEFAULT: "hsl(var(--destructive))",
-//           foreground: "hsl(var(--destructive-foreground))",
-//         },
-//         muted: {
-//           DEFAULT: "hsl(var(--muted))",
-//           foreground: "hsl(var(--muted-foreground))",
-//         },
-//         accent: {
-//           DEFAULT: "hsl(var(--accent))",
-//           foreground: "hsl(var(--accent-foreground))",
-//         },
-//         popover: {
-//           DEFAULT: "hsl(var(--popover))",
-//           foreground: "hsl(var(--popover-foreground))",
-//         },
-//         card: {
-//           DEFAULT: "hsl(var(--card))",
-//           foreground: "hsl(var(--card-foreground))",
-//         },
-//       },
-//     },
-//   },
-//   plugins: [require("daisyui")],
-//   daisyui: {
-//     themes: ["light", "dark"],
-//   },
-// }
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -175,54 +8,19 @@ module.exports = {
     "*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
-      },
-    },
+    extend: {},
   },
   plugins: [require("daisyui")],
   daisyui: {
     themes: [
       {
         techlight: {
-          primary: "#bd93f9",
-          secondary: "#ff79c6",
-          accent: "#50fa7b",
-          neutral: "#414558",
+          primary: "#30D499", // Verde água
+          secondary: "#4A39D2", // Azul forte
+          accent: "#4D15AD", // Roxo vibrante
+          neutral: "#374151",
           "base-100": "#f8f8f2",
+          "base-gradient": "linear-gradient(101deg, rgba(48,212,153,1) 0%, rgba(74,57,210,1) 48%, rgba(77,21,173,1) 100%)",
           info: "#8be9fd",
           success: "#50fa7b",
           warning: "#f1fa8c",
@@ -238,11 +36,12 @@ module.exports = {
           "--tab-radius": "0.3rem",
         },
         techdark: {
-          primary: "#bd93f9",
-          secondary: "#ff79c6",
-          accent: "#50fa7b",
-          neutral: "#414558",
-          "base-100": "#282a36",
+          primary: "#246E53", // Verde escuro
+          secondary: "#1A1261", // Azul profundo
+          accent: "#483070", // Roxo mais fechado
+          neutral: "#1F2937",
+          "base-100": "#1a1a2e",
+          "base-gradient": "linear-gradient(101deg, rgba(36,110,83,1) 0%, rgba(26,18,97,1) 48%, rgba(72,48,112,1) 100%)",
           info: "#8be9fd",
           success: "#50fa7b",
           warning: "#f1fa8c",
@@ -260,5 +59,4 @@ module.exports = {
       },
     ],
   },
-}
-
+};

@@ -2,37 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Estilos personalizados para efeitos translúcidos */
-@layer utilities {
-  .bg-translucent-light {
-    background-color: rgba(248, 248, 242, 0.8);
-    backdrop-filter: blur(10px);
-  }
-
-  .bg-translucent-dark {
-    background-color: rgba(40, 42, 54, 0.8);
-    backdrop-filter: blur(10px);
-  }
-
-  .border-translucent-light {
-    border-color: rgba(189, 147, 249, 0.3);
-  }
-
-  .border-translucent-dark {
-    border-color: rgba(189, 147, 249, 0.3);
+@layer base {
+  body {
+    background: var(--base-gradient);
+    @apply text-base-content min-h-screen;
   }
 }
-
-/* Estilos globais */
-body {
-  @apply bg-gradient-to-br from-base-100 to-base-300 min-h-screen;
-}
-
-.glass-card {
-  @apply bg-translucent-light dark:bg-translucent-dark border border-translucent-light dark:border-translucent-dark rounded-box shadow-lg;
-}
-
-.glass-button {
-  @apply bg-translucent-light dark:bg-translucent-dark border border-translucent-light dark:border-translucent-dark rounded-btn hover:bg-primary hover:text-primary-content transition-all duration-300;
-}
-
