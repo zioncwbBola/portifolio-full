@@ -1,0 +1,110 @@
+// src/components/PortfolioContent.tsx
+import { FC } from "react";
+import { Image, Laptop2, Package } from "lucide-react";
+
+const PortfolioContent: FC = () => {
+  const designImages = [
+    { src: "/images/design1.jpg", alt: "Design 1" },
+    { src: "/images/design2.jpg", alt: "Design 2" },
+    { src: "/images/design3.jpg", alt: "Design 3" },
+  ];
+
+  const webProjects = [
+    {
+      title: "E-commerce React",
+      description: "Loja online responsiva com integração de pagamentos.",
+      url: "https://exemplo-ecommerce.com",
+    },
+    {
+      title: "Dashboard Administrativo",
+      description: "Ferramenta para visualização de métricas empresariais.",
+      url: "https://dashboard-exemplo.com",
+    },
+  ];
+
+  const otherProjects = [
+    {
+      title: "Projeto API REST",
+      description: "Backend escalável para aplicações modernas.",
+    },
+    {
+      title: "Landing Page Promocional",
+      description: "Página otimizada para campanhas de marketing.",
+    },
+  ];
+
+  return (
+    <div className="flex flex-col items-center space-y-8 min-h-screen">
+      {/* Título */}
+      <h1 className="text-3xl md:text-4xl font-bold text-[#D94350]">
+        Meu Portfólio
+      </h1>
+
+      {/* Seção: Design Gráfico */}
+      <section className="w-full max-w-5xl">
+        <h2 className="text-2xl font-semibold flex items-center text-gray-800 dark:text-gray-100 mb-4">
+          <Image className="mr-2" /> Design Gráfico
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {designImages.map((image, index) => (
+            <img
+              key={index}
+              src={image.src}
+              alt={image.alt}
+              className="w-full h-48 object-cover rounded-lg shadow-md"
+            />
+          ))}
+        </div>
+      </section>
+
+      {/* Seção: Web e Aplicações */}
+      <section className="w-full max-w-5xl">
+        <h2 className="text-2xl font-semibold flex items-center text-gray-800 dark:text-gray-100 mb-4">
+          <Laptop2 className="mr-2" /> Sites e Aplicações
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {webProjects.map((project, index) => (
+            <a
+              key={index}
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-4 bg-gray-50 dark:bg-[#112244] rounded-lg shadow-md hover:shadow-lg transition-transform hover:-translate-y-1"
+            >
+              <h3 className="text-lg font-semibold text-[#D94350]">
+                {project.title}
+              </h3>
+              <p className="mt-2 text-gray-600 dark:text-gray-300">
+                {project.description}
+              </p>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      {/* Seção: Outros Projetos */}
+      <section className="w-full max-w-5xl">
+        <h2 className="text-2xl font-semibold flex items-center text-gray-800 dark:text-gray-100 mb-4">
+          <Package className="mr-2" /> Outros Projetos
+        </h2>
+        <div className="space-y-4">
+          {otherProjects.map((project, index) => (
+            <div
+              key={index}
+              className="p-4 bg-gray-50 dark:bg-[#112244] rounded-lg shadow-md"
+            >
+              <h3 className="text-lg font-semibold text-[#D94350]">
+                {project.title}
+              </h3>
+              <p className="mt-2 text-gray-600 dark:text-gray-300">
+                {project.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default PortfolioContent;

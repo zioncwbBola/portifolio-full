@@ -1,3 +1,4 @@
+// src/components/About.tsx
 import { FC } from "react";
 import { Briefcase, GraduationCap, Phone, Mail } from "lucide-react";
 
