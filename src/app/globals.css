@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-    background: var(--base-gradient);
-    @apply text-base-content min-h-screen;
-  }
+.base-gradient {
+  background: linear-gradient(101deg, var(--primary) 0%, var(--secondary) 48%, var(--accent) 100%);
+}
+
+[data-theme="techlight"] body{
+  background: linear-gradient(101deg, var(--primary) 0%, var(--secondary) 48%, var(--accent) 100%);
 }
