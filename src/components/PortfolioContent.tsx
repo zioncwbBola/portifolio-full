@@ -1,12 +1,13 @@
 // src/components/PortfolioContent.tsx
 import type { FC } from "react"
 import { Image, Laptop2, Package } from "lucide-react"
+import DesignCarousel from "@/components/Carousel"
 
 const PortfolioContent: FC = () => {
   const designImages = [
-    { src: "/images/design1.jpg", alt: "Design 1" },
-    { src: "/images/design2.jpg", alt: "Design 2" },
-    { src: "/images/design3.jpg", alt: "Design 3" },
+    { src: "/portfolio/design/01.png", alt: "Design 1" },
+    { src: "/portfolio/design/02.png", alt: "Design 2" },
+    { src: "/portfolio/design/01.png", alt: "Design 3" },    
   ]
 
   const webProjects = [
@@ -40,19 +41,7 @@ const PortfolioContent: FC = () => {
 
       {/* Seção: Design Gráfico */}
       <section className="w-full max-w-5xl">
-        <h2 className="text-2xl font-semibold flex items-center text-base-content mb-4">
-          <Image className="mr-2" /> Design Gráfico
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {designImages.map((image, index) => (
-            <img
-              key={index}
-              src={image.src || "/placeholder.svg"}
-              alt={image.alt}
-              className="w-full h-48 object-cover rounded-lg shadow-md"
-            />
-          ))}
-        </div>
+      <DesignCarousel designImages={designImages} />
       </section>
 
       {/* Seção: Web e Aplicações */}

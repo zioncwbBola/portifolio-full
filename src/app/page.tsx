@@ -6,7 +6,6 @@ import Sidebar from "@/components/Sidebar"
 import Footer from "@/components/Footer"
 import ThemeToggleButton from "@/components/ThemeToggleButton"
 import { useTheme } from "@/components/ThemeProvider"
-import NewMain from "@/components/MainNew"
 
 export default function HomePage() {
   const { theme } = useTheme()
@@ -16,7 +15,7 @@ export default function HomePage() {
       <Sidebar />
       <Main />
       <Footer />
-      <ThemeToggleButton />
+      {/* <ThemeToggleButton /> */}
     </div>
   )
 }

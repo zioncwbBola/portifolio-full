@@ -83,10 +83,10 @@ import { Briefcase, GraduationCap, Phone, Mail } from "lucide-react";
 
 const SobreContent: FC = () => {
   return (
-    <div className="flex flex-col items-center space-y-8 h-[70vh] overflow-hidden">
+    <div className="w-full flex flex-col items-center space-y-8 h-[70vh] overflow-hidden">
       <h1 className="text-3xl md:text-4xl font-bold text-primary">Meu Currículo</h1>
 
-      <div className="bg-base-200 p-6 md:p-8 rounded-xl shadow-md w-full max-w-4xl overflow-y-auto h-full">
+      <div className="bg-base-200 p-6 md:p-8 rounded-xl shadow-md w-full  overflow-y-auto h-full">
         <section className="mb-8">
           <h2 className="text-xl md:text-2xl font-semibold text-primary-content">Resumo</h2>
           <p className="mt-2 text-base-content">
