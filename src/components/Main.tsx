@@ -13,7 +13,7 @@ const Main = () => {
           <button
             key={tab}
             className={`px-4 py-2 md:px-8 md:py-4 text-sm md:text-lg font-semibold ${
-              activeTab === tab ? "bg-primary text-primary-content" : "text-base-content"
+              activeTab === tab ? "bg-primary text-primary-content shadow-lg shadow-secondary " : "text-base-content"
             }`}
             onClick={() => setActiveTab(tab)}
           >
