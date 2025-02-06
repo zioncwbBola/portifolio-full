@@ -11,7 +11,7 @@ export default function HomePage() {
   const { theme } = useTheme()
 
   return (
-    <div className={`relative flex flex-col w-full min-h-screen text-base-content bg-gradient-to-t from-accent via-secondary to-primary`}>
+    <div className={`relative flex flex-col w-full min-h-screen text-base-content bg-gradient-to-t from-secondary to-accent`}>
       <Sidebar />
       <Main />
       <Footer />

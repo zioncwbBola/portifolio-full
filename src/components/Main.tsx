@@ -7,7 +7,7 @@ const Main = () => {
   const [activeTab, setActiveTab] = useState("sobre");
 
   return (
-    <div className="mt-24 md:mt-16 mb-6 p-6 md:p-10 glass-card w-[90%] md:w-[80%] min-h-[80vh] flex flex-col items-center flex-start mx-auto shadow-lg shadow-cyan-500/50 ">
+    <div className="mt-24 md:mt-16 mb-6 p-6 md:p-10 glass-card w-[90%] md:w-[80%] min-h-[80vh] flex flex-col items-center flex-start mx-auto shadow-lg shadow-primary ">
       <div className="flex flex-wrap space-x-4 md:space-x-8  pb-3 mb-5 md:mb-7 w-full justify-center">
         {["sobre", "projetos", "contato"].map((tab) => (
           <button
